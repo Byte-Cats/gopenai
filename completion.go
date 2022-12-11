@@ -79,4 +79,8 @@ func main() {
 
 	resp, err := getCompletions(req)
 	if err != nil {
-		log.Fatal
+		log.Fatal(err)
+	}
+	log.Println(resp)
+	
+}
